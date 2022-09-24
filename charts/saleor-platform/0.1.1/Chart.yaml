@@ -54,7 +54,7 @@ dependencies:
   ## 2. Pods for the web server (for static assets and media assets) if not using cloud storage
   ## 3. Pods for the celery workers which execute particular tasks on demand
   - name: saleor-core
-    version: "0.1.1"
+    version: "0.1.2"
     repository: "https://eirenauts.github.io/saleor-k8s"
     condition: saleor-core.enabled
     tags:
