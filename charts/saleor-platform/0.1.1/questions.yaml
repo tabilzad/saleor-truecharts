@@ -90,19 +90,6 @@ questions:
     schema:
       label: "Public Key"
       type: string  
-      
-      
-      #attrs:
-      #  - variable: googleRecaptcha
-      #    label: "googleRecaptcha"
-      #    schema:
-      #      type: dict
-      #      attrs:
-      #       - variable: publicKey
-      #          label: "key"
-      #         description: "Key "
-      #          schema:
-      #            type: string
 
   
   - variable: allowedHosts
@@ -115,8 +102,8 @@ questions:
       items:
         - variable: host
           label: "Allowed Hosts"
-            schema:
-              type: string
+          schema:
+            type: string
          
   
   - variable: services
