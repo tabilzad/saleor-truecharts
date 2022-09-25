@@ -112,7 +112,7 @@ questions:
           label: "hosts"
           description: "Allowed Hosts"
           schema:
-            type: array
+            type: list
             label: "hosts"
             default: []
             items:
