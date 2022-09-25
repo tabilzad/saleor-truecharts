@@ -118,8 +118,8 @@ questions:
             items:
               - variable: host
                 label: "Custom Storage"
-                  schema:
-                    type: string
+                schema:
+                  type: string
          
   
   - variable: services
