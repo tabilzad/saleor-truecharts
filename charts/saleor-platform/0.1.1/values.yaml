@@ -3,4 +3,4 @@ global:
   allowedHosts:
     host: "{{ .Values.allowedHosts.host  }}"
 
-  captchaKey: {{ .Values.captchaKey | quote }}
+  captchaKey: "{{ .Values.captchaKey }}"
