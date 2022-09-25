@@ -7,7 +7,7 @@ allowedHosts:
 
 externalServices:
   googleRecaptcha:
-    publicKey: "{{ .Values.captchaKey }}"-test
+    publicKey: "{{ .Values.captchaKey }}-test"
 
 postgresql:
   enabled: true
