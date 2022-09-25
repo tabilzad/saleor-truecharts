@@ -110,7 +110,7 @@ questions:
           label: "hosts"
           description: "Allowed Hosts"
           schema:
-            type: list
+            type: array
             default: []
             items:
               type: string
