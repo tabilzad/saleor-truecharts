@@ -1,12 +1,12 @@
 
-allowedHosts:
-  includeIngressHosts: true
-  hosts:
-    - {{ $allowedHosts }}
-
-externalServices:
-  googleRecaptcha:
-    publicKey: {{ $captchaKey }}
+#allowedHosts:
+#  includeIngressHosts: true
+#  hosts:
+#    - {{ $allowedHosts }}
+#
+#externalServices:
+#  googleRecaptcha:
+#    publicKey: {{ $captchaKey }}
 
 postgresql:
   enabled: true
