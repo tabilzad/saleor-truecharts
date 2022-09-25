@@ -95,8 +95,10 @@ questions:
             type: dict
             attrs:
               - variable: publicKey
+                label: "key"
                 description: "Key "
-                type: string
+                schema:
+                  type: string
 
   
   - variable: allowedHosts
@@ -110,6 +112,7 @@ questions:
           description: "Allowed Hosts"
           schema:
             type: array
+            label: "hosts"
             default: []
             items:
               schema:
