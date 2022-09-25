@@ -91,6 +91,7 @@ questions:
       type: dict  
       attrs:
         - variable: googleRecaptcha
+          label: "googleRecaptcha"
           schema:
             type: dict
             attrs:
