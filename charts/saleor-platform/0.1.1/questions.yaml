@@ -89,12 +89,11 @@ questions:
     label: "Google Captcha key"
     schema:
       type: dict  
+      label: "captchaKey"
       attrs:
         - variable: googleRecaptcha
-          label: "googleRecaptcha"
           schema:
             type: dict
-            label: "captchaKey"
             attrs:
               - variable: publicKey
                 description: "Key "
@@ -119,13 +118,6 @@ questions:
               schema:
                 type: string
          
-  
-  - variable: captchaKey
-    group: "Networking"
-    label: "Google ReCaptcha Public Key"
-    schema:
-      type: string
-      default: example.com   
   
   - variable: services
     group: "Networking"
