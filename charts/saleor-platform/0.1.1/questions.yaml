@@ -94,8 +94,10 @@ questions:
           label: "googleRecaptcha"
           schema:
             type: dict
+            label: "captchaKey"
             attrs:
               - variable: publicKey
+                label: "key"
                 description: "Key "
                 type: string
 
@@ -104,16 +106,20 @@ questions:
     group: "Networking"
     label: "Allowed Saleor Hosts"
     schema:
-      type: dict   
+      type: dict 
+      label: "hosts"      
       attrs:
         - variable: hosts
           label: "hosts"
           description: "Allowed Hosts"
           schema:
             type: array
+            label: "host"
             default: []
             items:
-              type: string
+              label: "host value"
+              schema:
+                type: string
          
   
   - variable: captchaKey
