@@ -1,5 +1,5 @@
 global:
-  allowedIngressHost: {{ .Values.allowedHosts.host | quote }}
+  allowedIngressHost: "{{ .Values.allowedHosts.host }}"
   allowedHosts:
     host: "{{ .Values.allowedHosts.host  }}"
 
