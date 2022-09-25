@@ -1,13 +1,12 @@
 
+allowedHosts:
+  includeIngressHosts: true
+  hosts:
+    - {{.env.allowedHosts}}
 
 externalServices:
   googleRecaptcha:
-    publicKey: $captchaKey
-
-allowedHosts: 
-  includeIngessHosts: true
-  hosts:
-    - $allowedHosts
+    publicKey: {{.env.captchaKey}}
 
 postgresql:
   enabled: true
