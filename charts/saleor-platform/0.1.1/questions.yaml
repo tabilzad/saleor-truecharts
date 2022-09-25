@@ -83,6 +83,28 @@ questions:
     schema:
       type: boolean
       default: false
+      
+  - variable: allowedHosts
+    group: "Networking"
+    label: "Allowed Saleor Hosts"
+    schema:
+      type: string
+      default: example.com
+      
+  - variable: allowedClientHosts
+    group: "Networking"
+    label: "Allowed Client Saleor Hosts"
+    schema:
+      type: string
+      default: example.com   
+  
+  - variable: captchaKey
+    group: "Networking"
+    label: "Google ReCaptcha Public Key"
+    schema:
+      type: string
+      default: example.com   
+  
   - variable: services
     group: "Networking"
     label: "Configure Service"
