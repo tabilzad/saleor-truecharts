@@ -1,12 +1,4 @@
 
-global:
-  allowedIngressHost: {{ .Values.allowedHosts[0] | quote }}
-  allowedHosts:
-    host: {{ .Values.allowedHosts[0] | quote }}
-
-  captchaKey: {{ .Values.captchaKey | quote }}
-
-
 postgresql:
   enabled: true
 
