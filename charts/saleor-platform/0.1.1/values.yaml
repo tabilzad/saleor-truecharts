@@ -1,6 +1,6 @@
 global:
-  allowedIngressHost: {{ .Values.allowedHosts[0] | quote }}
+  allowedIngressHost: {{ .Values.allowedHosts.host | quote }}
   allowedHosts:
-    host: "{{ .Values.allowedHosts[0] }}"
+    host: "{{ .Values.allowedHosts.host  }}"
 
   captchaKey: {{ .Values.captchaKey | quote }}
