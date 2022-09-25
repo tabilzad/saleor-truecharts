@@ -90,8 +90,8 @@ questions:
     schema:
       type: dict  
       attrs:
-        - variable: externalServices
-          label: "externalServices"
+        - variable: googleRecaptcha
+          label: "googleRecaptcha"
           schema:
             type: dict
             attrs:
