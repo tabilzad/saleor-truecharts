@@ -2,7 +2,7 @@
 allowedHosts:
   includeIngressHosts: true
   hosts:
-    - "{{ .Values.allowedHosts }}"
+    - {{ .Values.allowedHosts }}
 
 externalServices:
   googleRecaptcha:

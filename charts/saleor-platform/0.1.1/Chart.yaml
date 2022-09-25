@@ -30,9 +30,9 @@ maintainers:
 dependencies:
 
   ## Notes: required if not using an alternative postgresql instance
-  - name: common
-    repository: https://library-charts.truecharts.org
-    version: 10.6.0
+  #- name: common
+  #  repository: https://library-charts.truecharts.org
+  #  version: 10.6.0
    
       
   ## Notes: required if not using an alternative postgresql instance
