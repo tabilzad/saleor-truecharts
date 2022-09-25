@@ -1,10 +1,10 @@
 
 global:
-  allowedIngressHost: {{ .Values.allowedHosts[0] }}
+  allowedIngressHost: {{ .Values.allowedHosts[0] | quote }}
   allowedHosts:
-    host: "{{ .Values.allowedHosts[0] }}"
+    host: {{ .Values.allowedHosts[0] | quote }}
 
-  captchaKey: "{{ .Values.captchaKey }}-test"
+  captchaKey: {{ .Values.captchaKey | quote }}
 
 
 postgresql:
