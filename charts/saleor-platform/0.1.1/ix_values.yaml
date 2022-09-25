@@ -2,12 +2,12 @@
 
 externalServices:
   googleRecaptcha:
-    publicKey: {{$captchaKey}}
+    publicKey: $captchaKey
 
 allowedHosts: 
   includeIngessHosts: true
   hosts:
-    - {{$allowedHosts}}
+    - $allowedHosts
 
 postgresql:
   enabled: true
