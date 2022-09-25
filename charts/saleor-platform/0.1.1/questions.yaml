@@ -84,42 +84,39 @@ questions:
       type: boolean
       default: false
   
-  - variable: externalServices
+  - variable: captchKey
     group: "Networking"
     label: "Google Captcha key"
     schema:
-      type: dict  
-      attrs:
-        - variable: googleRecaptcha
-          label: "googleRecaptcha"
-          schema:
-            type: dict
-            attrs:
-              - variable: publicKey
-                label: "key"
-                description: "Key "
-                schema:
-                  type: string
+      label: "Public Key"
+      type: string  
+      
+      
+      #attrs:
+      #  - variable: googleRecaptcha
+      #    label: "googleRecaptcha"
+      #    schema:
+      #      type: dict
+      #      attrs:
+      #       - variable: publicKey
+      #          label: "key"
+      #         description: "Key "
+      #          schema:
+      #            type: string
 
   
   - variable: allowedHosts
     group: "Networking"
     label: "Allowed Saleor Hosts"
     schema:
-      type: dict   
-      attrs:
-        - variable: hosts
-          label: "hosts"
-          description: "Allowed Hosts"
-          schema:
-            type: list
-            label: "hosts"
-            default: []
-            items:
-              - variable: host
-                label: "Custom Storage"
-                schema:
-                  type: string
+      type: list
+      label: "hosts"
+      default: []
+      items:
+        - variable: host
+          label: "Allowed Hosts"
+            schema:
+              type: string
          
   
   - variable: services
