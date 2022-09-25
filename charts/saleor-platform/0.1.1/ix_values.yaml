@@ -1,13 +1,4 @@
 
-allowedHosts:
-  includeIngressHosts: true
-  hosts:
-    - example.com
-    - "{{ .Values.allowedHosts }}"
-
-externalServices:
-  googleRecaptcha:
-    publicKey: "{{ .Values.captchaKey }}-test"
 
 postgresql:
   enabled: true
