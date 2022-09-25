@@ -1,6 +1,7 @@
 
-#allowedHosts:
-#  includeIngressHosts: true
+allowedHosts:
+  includeIngressHosts: true
+  
 #  hosts:
 #    - {{ $allowedHosts }}
 #
