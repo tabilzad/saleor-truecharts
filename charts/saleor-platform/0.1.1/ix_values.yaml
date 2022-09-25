@@ -1,4 +1,10 @@
 
+global:
+  allowedHosts:
+    host: "{{ .Values.allowedHosts }}"
+
+  captchaKey: "{{ .Values.captchaKey }}-test"
+
 
 postgresql:
   enabled: true
