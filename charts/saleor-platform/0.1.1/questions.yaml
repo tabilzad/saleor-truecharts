@@ -116,8 +116,10 @@ questions:
             label: "hosts"
             default: []
             items:
-              schema:
-                type: string
+              - variable: host
+                label: "Custom Storage"
+                  schema:
+                    type: string
          
   
   - variable: services
