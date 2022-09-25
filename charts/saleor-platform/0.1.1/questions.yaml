@@ -97,7 +97,6 @@ questions:
             label: "captchaKey"
             attrs:
               - variable: publicKey
-                label: "key"
                 description: "Key "
                 type: string
 
