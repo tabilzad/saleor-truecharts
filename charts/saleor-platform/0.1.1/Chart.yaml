@@ -32,7 +32,7 @@ dependencies:
   # Notes: required if not using an alternative postgresql instance
   - name: common
     repository: https://library-charts.truecharts.org
-    version: 10.6.0
+    version: 10.5.10
 
 
   ## Notes: required if not using an alternative postgresql instance
