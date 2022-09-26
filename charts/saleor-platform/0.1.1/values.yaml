@@ -1,6 +1,6 @@
-global:
-  allowedIngressHost: {{ index .Values.allowedHosts 0 | toString | quote }}
-  allowedHosts:
-    host: {{ .Values.allowedHosts.host | quote }}
-
-  captchaKey: {{ .Values.captchaKey | quote }}
+#global:
+#  allowedIngressHost: {{ index .Values.allowedHosts 0 | toString | quote }}
+#  allowedHosts:
+#    host: {{ .Values.allowedHosts.host | quote }}
+#
+#  captchaKey: {{ .Values.captchaKey | quote }}
