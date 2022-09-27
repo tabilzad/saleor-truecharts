@@ -37,16 +37,16 @@ dependencies:
 
   ## Notes: required if not using an alternative postgresql instance
   - name: postgresql
-    version: 10.14.3
-    repository: "https://charts.bitnami.com/bitnami"
+    version: 9.8.11
+    repository: "https://github.com/tabilzad/saleor-truecharts"
     condition: postgresql.enabled
     tags:
       - database
 
   ## Notes: required if not using an alternative redis instance
   - name: redis
-    version: 15.7.0
-    repository: "https://charts.bitnami.com/bitnami"
+    version: 12.0.0
+    repository: "https://github.com/tabilzad/saleor-truecharts"
     condition: redis.enabled
     tags:
       - cache
