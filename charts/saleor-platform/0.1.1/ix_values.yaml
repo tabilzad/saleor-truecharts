@@ -2,6 +2,10 @@
 postgresql:
   enabled: true
 
+
+cluster:
+  enabled: false
+
 redis:
   enabled: true
 
