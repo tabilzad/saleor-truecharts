@@ -44,8 +44,8 @@ dependencies:
 
   ## Notes: required if not using an alternative redis instance
   - name: redis
-    version: 12.0.0
-    repository: "https://github.com/tabilzad/saleor-truecharts"
+    version: 15.7.0
+    repository: "https://charts.bitnami.com/bitnami"
     condition: redis.enabled
     tags:
       - cache
