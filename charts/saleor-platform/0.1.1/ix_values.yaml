@@ -5,7 +5,7 @@ postgresql:
 redis:
   enabled: true
 
-nfs:
+nfs-server-provisioner:
   enabled: true
 
 saleor-core:
