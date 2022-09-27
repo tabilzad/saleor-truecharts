@@ -37,7 +37,7 @@ dependencies:
   ## Notes: required if not using an alternative postgresql instance
   - name: postgresql
     version: 9.8.11
-    repository: "https://github.com/tabilzad/saleor-truecharts"
+    repository: "https://charts.bitnami.com/bitnami"
     condition: postgresql.enabled
     tags:
       - database
@@ -56,7 +56,7 @@ dependencies:
   - name: nfs-server-provisioner
     version: 1.1.1
     repository: "https://kvaps.github.io/charts"
-    condition: nfs-server-provisioner.enabled
+    condition: nfs.enabled
     tags:
       - nfs
 
@@ -65,8 +65,9 @@ dependencies:
   ## 2. Pods for the web server (for static assets and media assets) if not using cloud storage
   ## 3. Pods for the celery workers which execute particular tasks on demand
   - name: saleor-core
-    version: "0.1.2"
-    repository: "https://github.com/tabilzad/saleor-truecharts"
+    version: "0.1.1"
+    #repository: "https://github.com/tabilzad/saleor-truecharts"
+    repository: "https://eirenauts.github.io/saleor-k8s"
     condition: saleor-core.enabled
     tags:
       - workers
@@ -76,7 +77,7 @@ dependencies:
   ## Notes: This is a web server of pre-built static assets and emails for the storefront which customers see
   - name: saleor-storefront
     version: "0.1.1"
-    repository: "https://github.com/tabilzad/saleor-truecharts"
+    repository: "https://eirenauts.github.io/saleor-k8s"
     condition: saleor-storefront.enabled
     tags:
       - ui
@@ -85,7 +86,7 @@ dependencies:
   ## Notes: This is a web server of pre-built static assets for the administrative dashboard
   - name: saleor-dashboard
     version: "0.1.1"
-    repository: "https://github.com/tabilzad/saleor-truecharts"
+    repository: "https://eirenauts.github.io/saleor-k8s"
     condition: saleor-dashboard.enabled
     tags:
       - ui
