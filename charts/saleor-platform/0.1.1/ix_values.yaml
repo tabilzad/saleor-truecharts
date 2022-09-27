@@ -12,7 +12,7 @@ saleor-core:
   enabled: true
 
 saleor-storefront:
-  enabled: true
+  enabled: false
 
 saleor-dashboard:
   enabled: true
